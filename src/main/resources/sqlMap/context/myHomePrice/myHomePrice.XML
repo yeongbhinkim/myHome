@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.newYB.myHome.myHome.myHomePrice.mapper.myHomePriceMapper">
+<mapper namespace="com.newYB.myHome.myHome.myHomePrice.mapper.MyHomePriceMapper">
 
     <select id="selectMyHomePriceList" parameterType="json" resultType="json">
-
+        SELECT *
+        FROM apt
+        where city like '%울산광역시 북구 천곡동%'
     </select>
 
 </mapper>
